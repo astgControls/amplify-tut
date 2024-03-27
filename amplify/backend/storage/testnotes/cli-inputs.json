@@ -1,0 +1,12 @@
+{
+  "resourceName": "testnotes",
+  "policyUUID": "1ad710ef",
+  "bucketName": "amplifytutbucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
