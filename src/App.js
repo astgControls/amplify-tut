@@ -41,6 +41,7 @@ const App = ({ signOut }) => {
         if (note.image) {
           const url = await getUrl(note.name);
           note.image = url;
+          console.log(url.url.href)
         }
         return note;
       })
@@ -132,7 +133,7 @@ const App = ({ signOut }) => {
             <Text as="span">{note.description}</Text>
             {note.image && (
               <Image
-              src={note.image}
+              src={note.image.url.href}
               alt={`visual aid for ${note.name}`}
               style={{ width: 400 }}
               />
